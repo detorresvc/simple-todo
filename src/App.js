@@ -5,7 +5,10 @@ const initState = []
 const todos = (state = initState, action) => {
   switch(action.type){
     case "ADD_TODO":
-      return state.concat(action.data)
+      return [
+        action.data,
+        ...state
+      ]
     case "REMOVE_TODO":
       return state.filter((item, i) => i !== action.index)
     case "MARK_COMPLETE":
