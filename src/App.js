@@ -62,7 +62,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <div className="text-center">TODO'S USING REACT HOOKS</div>
+      <div className="text-center">{`TODO'S USING REACT HOOKS`}</div>
       <div className="row">
         <div className="col">
           <form onSubmit={addTodo}>
